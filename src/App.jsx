@@ -18,7 +18,7 @@ const ScrollToTop = () => {
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [/order/.test(pathname) ? pathname : null]); // Only scroll to top on PlaceOrder1 page
+  }, [/order/.test(pathname) ? pathname : null]);
   return null;
 };  
 
